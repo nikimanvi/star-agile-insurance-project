@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/nikimanvi/star-agile-health-care.git'
+                git 'https://github.com/nikimanvi/star-agile-insurance-project.git'
             }
         }
 
