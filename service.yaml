@@ -3,12 +3,12 @@ kind: Service
 metadata:
   name: insurance-service
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: insurance
   ports:
     - name: http
       protocol: TCP
-      port: 80          # Port exposed to outside world
-      targetPort: 8083  # Port inside the container
+      port: 80
+      targetPort: 8083
       nodePort: 31369
