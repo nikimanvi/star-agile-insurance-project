@@ -2,7 +2,7 @@ pipeline {
     agent { label 'maven_slave' } 
 
     environment {
-        DOCKER_IMAGE = "nikithamanvi/insureance:${BUILD_NUMBER}"
+        DOCKER_IMAGE = "nikithamanvi/insurance:${BUILD_NUMBER}"
     }
 
     stages {
